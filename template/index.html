@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Motivation Classification</title>
+    </head>
+    <body>
+        <h2>Classify the motivation below</h2>
+        <br>
+        <form method="post" enctype="multipart/form-data" action="classifyMotivation">
+            {% csrf_token %}
+            <div class="col-md-4 col-sm-4"><label for="fname">Motivation:</label> </div> <input name="value" type="text" value={{motivasi}}><br><br>
+            <input type="submit" value="Submit" ></div>
+        </form>
+        <h3>result: {{result}}</h3>
+    </body>
+</html>
